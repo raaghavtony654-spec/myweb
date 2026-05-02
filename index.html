@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Commerce Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23050507%22/><text y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%2300d4ff%22>T</text><text x=%2230%22 y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%2300f5c4%22>C</text><text x=%2265%22 y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%23ff3c6e%22>E</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo"><span class="the">The</span>Commerce<span>Engineer</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#accolades">Competitions</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://www.instagram.com/the_commerce_engineer?igsh=MWxsNG92MnI2MDgydA==" target="_blank" class="nav-insta-btn">Instagram</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="hero-wrapper">
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <canvas id="hero-particles"></canvas>
+
+  <div class="hero-glow g2"></div>
+
+  <div class="hero-decoration">
+    <svg width="160" height="450" viewBox="0 0 160 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Dot Grid (Scaled up to 5x5 with 30px spacing) -->
+      <g class="dot-grid">
+        <circle cx="20" cy="20" r="4" class="dot d1"/>
+        <circle cx="50" cy="20" r="4" class="dot d2"/>
+        <circle cx="80" cy="20" r="4" class="dot d3"/>
+        <circle cx="110" cy="20" r="4" class="dot d1"/>
+        <circle cx="140" cy="20" r="4" class="dot d4"/>
+        
+        <circle cx="20" cy="50" r="4" class="dot d3"/>
+        <circle cx="50" cy="50" r="4" class="dot d1"/>
+        <circle cx="80" cy="50" r="4" class="dot d2"/>
+        <circle cx="110" cy="50" r="4" class="dot d4"/>
+        <circle cx="140" cy="50" r="4" class="dot d1"/>
+
+        <circle cx="20" cy="80" r="4" class="dot d2"/>
+        <circle cx="50" cy="80" r="4" class="dot d4"/>
+        <circle cx="80" cy="80" r="4" class="dot d1"/>
+        <circle cx="110" cy="80" r="4" class="dot d3"/>
+        <circle cx="140" cy="80" r="4" class="dot d2"/>
+
+        <circle cx="20" cy="110" r="4" class="dot d1"/>
+        <circle cx="50" cy="110" r="4" class="dot d3"/>
+        <circle cx="80" cy="110" r="4" class="dot d2"/>
+        <circle cx="110" cy="110" r="4" class="dot d4"/>
+        <circle cx="140" cy="110" r="4" class="dot d1"/>
+
+        <circle cx="20" cy="140" r="4" class="dot d3"/>
+        <circle cx="50" cy="140" r="4" class="dot d1"/>
+        <circle cx="80" cy="140" r="4" class="dot d4"/>
+        <circle cx="110" cy="140" r="4" class="dot d2"/>
+        <circle cx="140" cy="140" r="4" class="dot d3"/>
+      </g>
+      
+      <!-- Animated Line (Bottom to Top, length 220) -->
+      <line x1="80" y1="400" x2="80" y2="180" class="draw-line" />
+      
+      <!-- Pulsing Circle (Scaled up) -->
+      <circle cx="80" cy="430" r="12" class="pulse-circle" />
+      <circle cx="80" cy="430" r="18" class="pulse-ring" />
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-decoration-portrait">
+      <svg width="450" height="150" viewBox="0 0 450 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pulsing Circle (Very Left) -->
+        <circle cx="30" cy="75" r="10" class="pulse-circle" />
+        <circle cx="30" cy="75" r="16" class="pulse-ring" />
+        
+        <!-- Animated Horizontal Line (Left to Right) -->
+        <line x1="60" y1="75" x2="250" y2="75" class="draw-line-horiz" />
+        
+        <!-- Dotted Pattern (5x5 Grid - Very Right) -->
+        <g class="dot-grid">
+          <circle cx="290" cy="15" r="3" class="dot d1"/><circle cx="320" cy="15" r="3" class="dot d2"/><circle cx="350" cy="15" r="3" class="dot d3"/><circle cx="380" cy="15" r="3" class="dot d1"/><circle cx="410" cy="15" r="3" class="dot d4"/>
+          <circle cx="290" cy="45" r="3" class="dot d3"/><circle cx="320" cy="45" r="3" class="dot d1"/><circle cx="350" cy="45" r="3" class="dot d2"/><circle cx="380" cy="45" r="3" class="dot d4"/><circle cx="410" cy="45" r="3" class="dot d1"/>
+          <circle cx="290" cy="75" r="3" class="dot d2"/><circle cx="320" cy="75" r="3" class="dot d4"/><circle cx="350" cy="75" r="3" class="dot d1"/><circle cx="380" cy="75" r="3" class="dot d3"/><circle cx="410" cy="75" r="3" class="dot d2"/>
+          <circle cx="290" cy="105" r="3" class="dot d1"/><circle cx="320" cy="105" r="3" class="dot d3"/><circle cx="350" cy="105" r="3" class="dot d2"/><circle cx="380" cy="105" r="3" class="dot d4"/><circle cx="410" cy="105" r="3" class="dot d1"/>
+          <circle cx="290" cy="135" r="3" class="dot d3"/><circle cx="320" cy="135" r="3" class="dot d1"/><circle cx="350" cy="135" r="3" class="dot d4"/><circle cx="380" cy="135" r="3" class="dot d2"/><circle cx="410" cy="135" r="3" class="dot d3"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-tag">Commerce · Engineering · Performance</div>
+    <h1 class="hero-name">
+      <span class="line1">Raaghav</span>
+      <span class="line2">T<span id="portal-o" style="display:inline-block">o</span>ny</span>
+    </h1>
+    <p class="hero-tagline">
+      Where <em>spreadsheets meet source code</em> and business logic meets iron discipline —
+      building products, marketing campaigns, and bodies that actually perform.
+    </p>
+    <div class="hero-ctas">
+      <a href="#about" class="btn-primary">Know More</a>
+      <a href="https://www.instagram.com/the_commerce_engineer?igsh=MWxsNG92MnI2MDgydA==" target="_blank" class="btn-ghost">Instagram</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-texts">
+        <span class="stat-num">12th</span>
+        <span class="stat-label">Commerce Grade</span>
+      </div>
+      <div class="stat-bar"></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-texts">
+        <span class="stat-num">11</span>
+        <span class="stat-label">Age First Code</span>
+      </div>
+      <div class="stat-bar"></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-texts">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Disciplines</span>
+      </div>
+      <div class="stat-bar"></div>
+    </div>
+  </div>
+
+
+</section>
+</div>
+
+<!-- MARQUEE -->
+<div id="rest-of-site">
+<div class="video-bg-container">
+  <video autoplay muted loop playsinline class="site-video-bg">
+    <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260306_074215_04640ca7-042c-45d6-bb56-58b1e8a42489.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+</div>
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Web Development</span><span class="dot">✦</span>
+    <span>Digital Marketing</span><span class="dot">✦</span>
+    <span>Fitness Coaching</span><span class="dot">✦</span>
+    <span>Python</span><span class="dot">✦</span>
+    <span>Martial Arts</span><span class="dot">✦</span>
+    <span>E-Commerce</span><span class="dot">✦</span>
+    <span>FastAPI</span><span class="dot">✦</span>
+    <span>Bodybuilding</span><span class="dot">✦</span>
+    <span>Commerce Strategy</span><span class="dot">✦</span>
+    <span>Web Development</span><span class="dot">✦</span>
+    <span>Digital Marketing</span><span class="dot">✦</span>
+    <span>Fitness Coaching</span><span class="dot">✦</span>
+    <span>Python</span><span class="dot">✦</span>
+    <span>Martial Arts</span><span class="dot">✦</span>
+    <span>E-Commerce</span><span class="dot">✦</span>
+    <span>FastAPI</span><span class="dot">✦</span>
+    <span>Bodybuilding</span><span class="dot">✦</span>
+    <span>Commerce Strategy</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="max-w">
+    <div class="section-label reveal">About Me</div>
+    <h2 class="section-title reveal">The Unusual<br/>Combination</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm <strong>Raaghav Tony</strong> — a Grade 12 Commerce passout who refuses to be boxed in by a single label. 
+          On paper, I'm a commerce student. In reality, I'm someone who has been <span class="highlight">obsessed with hardware and software 
+          since the age of 4</span>, wrote his first Python program at 11, and hasn't looked back since.
+        </p>
+        <p>
+          I exist at the crossroads of <strong>business thinking and technical execution</strong> — understanding both the 
+          market and the machine. Commerce gave me the strategic lens. Computers gave me the tools to build anything I can imagine.
+        </p>
+        <p>
+          Outside the screen, I'm a <strong>fitness obsessive</strong> — into martial arts, weight training, bodybuilding, structured 
+          dieting, and endurance running. The same discipline that builds a body is the same that ships a product.
+        </p>
+        <p>
+          I'm also relentlessly curious about the bigger picture: <strong>world history, geopolitics, the structures of power</strong> — 
+          who controls what, how systems rise and fall, and what drives the invisible forces shaping our world. 
+          Add to that a genuine fascination with the paranormal and the unexplained, and you start to get a picture of someone 
+          who takes nothing at face value.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card tilt reveal reveal-delay-1">
+          <svg class="card-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="card-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" />
+                <stop offset="100%" stop-color="var(--accent2)" />
+              </linearGradient>
+            </defs>
+            <path class="border-path" d="M 0,0 L 95,0 L 100,5 L 100,100 L 5,100 L 0,95 Z" pathLength="100" stroke="url(#card-grad-1)" />
+          </svg>
+          <span class="about-card-icon">💻</span>
+          <h4>Tech Since Age 4</h4>
+          <p>Hardware and software were always the first love. First program written at 11 in Python.</p>
+        </div>
+        <div class="about-card tilt reveal reveal-delay-2">
+          <svg class="card-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="card-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" />
+                <stop offset="100%" stop-color="var(--accent2)" />
+              </linearGradient>
+            </defs>
+            <path class="border-path" d="M 0,0 L 95,0 L 100,5 L 100,100 L 5,100 L 0,95 Z" pathLength="100" stroke="url(#card-grad-2)" />
+          </svg>
+          <span class="about-card-icon">🥋</span>
+          <h4>Martial Artist</h4>
+          <p>Discipline forged in the gym and on the mat — martial arts, lifting, running, diet.</p>
+        </div>
+        <div class="about-card tilt reveal reveal-delay-3">
+          <svg class="card-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="card-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" />
+                <stop offset="100%" stop-color="var(--accent2)" />
+              </linearGradient>
+            </defs>
+            <path class="border-path" d="M 0,0 L 95,0 L 100,5 L 100,100 L 5,100 L 0,95 Z" pathLength="100" stroke="url(#card-grad-3)" />
+          </svg>
+          <span class="about-card-icon">📊</span>
+          <h4>Commerce Brain</h4>
+          <p>CBSE Commerce background blended with engineering thinking and market instincts.</p>
+        </div>
+        <div class="about-card tilt reveal reveal-delay-4">
+          <svg class="card-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="card-grad-4" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" />
+                <stop offset="100%" stop-color="var(--accent2)" />
+              </linearGradient>
+            </defs>
+            <path class="border-path" d="M 0,0 L 95,0 L 100,5 L 100,100 L 5,100 L 0,95 Z" pathLength="100" stroke="url(#card-grad-4)" />
+          </svg>
+          <span class="about-card-icon">🌍</span>
+          <h4>World Watcher</h4>
+          <p>History, geopolitics, power structures, and the paranormal — always questioning the surface.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCOLADES -->
+<section id="accolades">
+  <div class="max-w">
+    <div class="section-label reveal">Achievements</div>
+    <h2 class="section-title reveal">Competition<br/>Wins</h2>
+    <div class="accolades-grid">
+      <div class="accolade-card tilt reveal">
+        <div class="accolade-year">2025</div>
+        <div class="accolade-header">
+          <span class="accolade-rank">Winner</span>
+          <span class="accolade-badge">Largest in Tri-City</span>
+        </div>
+        <h3 class="accolade-name">Coalesce 2025</h3>
+        <p class="accolade-loc">St. John's High School, Chandigarh</p>
+        <p class="accolade-desc">Led the Tech/Online department for a 3-member team in the biggest business competition of the region, securing the top spot through strategic technical execution.</p>
+      </div>
+      <div class="accolade-card tilt reveal reveal-delay-1">
+        <div class="accolade-year">2025</div>
+        <div class="accolade-header">
+          <span class="accolade-rank">Runner-up</span>
+        </div>
+        <h3 class="accolade-name">Shemrock Business Meet</h3>
+        <p class="accolade-loc">Shemrock School, Sector 69</p>
+        <p class="accolade-desc">Served as the Tech In-charge for our consistent 3-member team, securing 2nd place in a highly competitive field of business strategists.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider reveal">
+  <div class="divider-line"></div>
+  <div class="divider-icon">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="max-w">
+    <div class="section-label reveal">What I Do</div>
+    <h2 class="section-title reveal">Core<br/>Disciplines</h2>
+    <div class="skills-grid">
+      <div class="skill-card tilt reveal reveal-delay-1">
+        <span class="skill-num">01</span>
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Web Development</div>
+        <div class="skill-desc">Building full-stack web applications and platforms — from backend APIs to pixel-perfect frontends. Clean code, real performance, zero fluff.</div>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Razorpay</span>
+        </div>
+      </div>
+      <div class="skill-card tilt reveal reveal-delay-2">
+        <span class="skill-num">02</span>
+        <div class="skill-icon">📢</div>
+        <div class="skill-name">Marketing & Ads</div>
+        <div class="skill-desc">Crafting digital marketing strategies and advertisement campaigns that convert. Commerce thinking meets creative execution — visibility that turns into revenue.</div>
+        <div class="skill-tags">
+          <span class="tag">Digital Ads</span>
+          <span class="tag">Strategy</span>
+          <span class="tag">Branding</span>
+          <span class="tag">Growth</span>
+        </div>
+      </div>
+      <div class="skill-card tilt reveal reveal-delay-3">
+        <span class="skill-num">03</span>
+        <div class="skill-icon">💪</div>
+        <div class="skill-name">Fitness Coaching</div>
+        <div class="skill-desc">Personal coaching rooted in real experience — weight training, martial arts conditioning, structured nutrition, and the mental fortitude that ties it all together.</div>
+        <div class="skill-tags">
+          <span class="tag">Bodybuilding</span>
+          <span class="tag">Nutrition</span>
+          <span class="tag">Martial Arts</span>
+          <span class="tag">Programming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="max-w">
+    <div class="section-label reveal">Work</div>
+    <h2 class="section-title reveal">Selected<br/>Projects</h2>
+    <div class="projects-grid">
+
+      <!-- TNR E-Bikes -->
+      <div class="project-card tilt reveal reveal-delay-1">
+        <div class="project-thumb-placeholder">
+          <span>⚡</span>
+        </div>
+        <div class="project-overlay"></div>
+        <div class="project-body">
+          <div class="project-status active">Active — In Progress</div>
+          <div class="project-name">TNR E-Bikes</div>
+          <div class="project-desc">Collaborating with TNR, an electric bike company, on their digital presence — web strategy, product positioning, and online marketing to accelerate their EV brand in the market.</div>
+          <span class="project-link" style="color:var(--muted); cursor:default;">Ongoing Collab</span>
+        </div>
+      </div>
+
+      <!-- Ventashield -->
+      <div class="project-card tilt reveal reveal-delay-2" style="cursor:pointer;" onclick="window.open('https://ventashield.netlify.app/','_blank')">
+        <div class="website-preview">
+          <div class="preview-browser">
+            <div class="browser-bar">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <span class="browser-url">ventashield.netlify.app</span>
+            </div>
+            <div class="browser-content">
+              <div class="site-name">VentaShield</div>
+              <div class="site-sub">↗ Click to visit live site</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-overlay"></div>
+        <div class="project-body">
+          <div class="project-status">Live Website</div>
+          <div class="project-name">VentaShield</div>
+          <div class="project-desc">A fully designed and deployed website — built from scratch and launched on Netlify. Clean, responsive, and production-ready.</div>
+          <a href="https://ventashield.netlify.app/" target="_blank" class="project-link">Visit Live Site</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="max-w">
+    <div class="section-label reveal">Hire Me</div>
+    <h2 class="section-title reveal">Services<br/>I Offer</h2>
+    <div class="services-list">
+      <div class="service-item reveal">
+        <span class="service-num">01</span>
+        <div class="service-content">
+          <div class="service-title">Web App Development</div>
+          <div class="service-sub">Full-stack builds · Landing pages · E-commerce · EdTech platforms · Custom APIs</div>
+        </div>
+        <span class="service-icon">🌐</span>
+      </div>
+      <div class="service-item reveal reveal-delay-1">
+        <span class="service-num">02</span>
+        <div class="service-content">
+          <div class="service-title">Online Marketing & Advertisement</div>
+          <div class="service-sub">Campaign strategy · Digital ads · Brand building · Social growth · Content direction</div>
+        </div>
+        <span class="service-icon">📢</span>
+      </div>
+      <div class="service-item reveal reveal-delay-2">
+        <span class="service-num">03</span>
+        <div class="service-content">
+          <div class="service-title">Personal Fitness Coaching</div>
+          <div class="service-sub">Custom training plans · Nutrition guidance · Martial arts conditioning · Mindset coaching</div>
+        </div>
+        <span class="service-icon">💪</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-bg-text">CONNECT</div>
+  <div class="max-w contact-inner">
+    <div class="section-label reveal" style="justify-content:center;">Contact</div>
+    <h2 class="section-title reveal" style="text-align:center;">Let's Build<br/>Something</h2>
+    <p class="reveal" style="color:var(--muted); max-width:500px; margin:1rem auto; line-height:1.8; font-weight:300; text-align:center;">
+      Whether it's a web project, a marketing campaign, a fitness goal, or just a conversation — reach out.
+    </p>
+    <div class="contact-socials reveal">
+      <a href="https://www.instagram.com/the_commerce_engineer?igsh=MWxsNG92MnI2MDgydA==" target="_blank" class="social-link">Instagram ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span class="the">The</span>Commerce<span>Engineer</span></div>
+  <div class="footer-copy">© 2025 Raaghav Tony · Built with intent</div>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
