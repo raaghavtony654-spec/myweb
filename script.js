@@ -770,7 +770,14 @@ function initContactForm() {
     statusMsg.textContent = "Sending your message...";
     statusMsg.className = "form-status";
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#contact-form', PUBLIC_KEY)
+    const templateParams = {
+      user_name: document.getElementById('user_name').value,
+      user_email: document.getElementById('user_email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
       .then(() => {
         statusMsg.textContent = "✓ Message sent successfully! I'll get back to you soon.";
         statusMsg.className = "form-status success";
