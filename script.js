@@ -753,7 +753,7 @@ function initContactForm() {
   // EmailJS Credentials
   const PUBLIC_KEY = "8__XgtQlKuaLWpaTu"; 
   const SERVICE_ID = "service_6n4obzb"; 
-  const TEMPLATE_ID = "template_sv6s8l3"; 
+  const TEMPLATE_ID = "template_zk7i3jg"; 
 
   // Initialize EmailJS
   if (typeof emailjs !== 'undefined') {
