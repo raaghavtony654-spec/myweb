@@ -771,9 +771,9 @@ function initContactForm() {
     statusMsg.className = "form-status";
 
     const templateParams = {
-      user_name: document.getElementById('user_name').value,
-      user_email: document.getElementById('user_email').value,
-      subject: document.getElementById('subject').value,
+      name: document.getElementById('user_name').value,
+      email: document.getElementById('user_email').value,
+      title: document.getElementById('subject').value,
       message: document.getElementById('message').value
     };
 
