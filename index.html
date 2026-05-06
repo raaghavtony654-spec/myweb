@@ -9,8 +9,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23050507%22/><text y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%2300d4ff%22>T</text><text x=%2230%22 y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%2300f5c4%22>C</text><text x=%2265%22 y=%22.9em%22 font-size=%2280%22 font-family=%22Syne, sans-serif%22 font-weight=%22800%22 fill=%22%23ff3c6e%22>E</text></svg>">
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 </head>
-<body>
+<!-- SPLASH SCREEN -->
+<div id="splash-screen">
+  <video autoplay muted loop playsinline class="splash-video">
+    <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260324_024928_1efd0b0d-6c02-45a8-8847-1030900c4f63.mp4" type="video/mp4">
+  </video>
+  <div class="splash-content">
+    <div class="splash-name-wrap">
+      <h1 class="splash-name"><span class="splash-name-typed"></span></h1>
+      <div class="splash-progress-text">0%</div>
+      <div class="splash-bar-wrap">
+        <div class="splash-bar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" style="opacity: 0; visibility: hidden;">
 
 <!-- CURSOR -->
 <div id="cursor"></div>
@@ -41,7 +59,7 @@
   <div class="hero-glow g2"></div>
 
   <div class="hero-decoration">
-    <svg width="160" height="450" viewBox="0 0 160 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="160" height="500" viewBox="0 0 160 500" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Dot Grid (Scaled up to 5x5 with 30px spacing) -->
       <g class="dot-grid">
         <circle cx="20" cy="20" r="4" class="dot d1"/>
@@ -107,7 +125,7 @@
     <div class="hero-tag">Commerce · Engineering · Performance</div>
     <h1 class="hero-name">
       <span class="line1">Raaghav</span>
-      <span class="line2">T<span id="portal-o" style="display:inline-block">o</span>ny</span>
+      <span class="line2">T<span id="portal-o" style="display:inline-block">O</span>NY</span>
     </h1>
     <p class="hero-tagline">
       Where <em>spreadsheets meet source code</em> and business logic meets iron discipline —
@@ -268,29 +286,34 @@
 </section>
 
 <!-- ACCOLADES -->
-<section id="accolades">
-  <div class="max-w">
-    <div class="section-label reveal">Achievements</div>
-    <h2 class="section-title reveal">Competition<br/>Wins</h2>
-    <div class="accolades-grid">
-      <div class="accolade-card tilt reveal">
-        <div class="accolade-year">2025</div>
-        <div class="accolade-header">
-          <span class="accolade-rank">Winner</span>
-          <span class="accolade-badge">Largest in Tri-City</span>
+<!-- ACCOLADES -->
+<section id="accolades" class="horizontal-pin-section">
+  <div class="max-w horizontal-pin-content">
+    <div class="pinned-header-wrap">
+      <div class="section-label reveal">Achievements</div>
+      <h2 class="section-title reveal">Competition<br/>Wins</h2>
+    </div>
+    <div class="cards-viewport">
+      <div class="cards-track">
+        <div class="accolade-card tilt reveal accolade-slide">
+          <div class="accolade-year">2025</div>
+          <div class="accolade-header">
+            <span class="accolade-rank">Winner</span>
+            <span class="accolade-badge">Largest in Tri-City</span>
+          </div>
+          <h3 class="accolade-name">Coalesce 2025</h3>
+          <p class="accolade-loc">St. John's High School, Chandigarh</p>
+          <p class="accolade-desc">As the Lead of the Tech and Online Department for a highly selective 3-member team, I spearheaded the technical strategy for the region's most prestigious business competition. My role involved orchestrating digital operations, managing real-time data analysis, and ensuring seamless technical execution across multiple high-stakes rounds, ultimately outperforming over 50 competing teams to secure the championship title.</p>
         </div>
-        <h3 class="accolade-name">Coalesce 2025</h3>
-        <p class="accolade-loc">St. John's High School, Chandigarh</p>
-        <p class="accolade-desc">Led the Tech/Online department for a 3-member team in the biggest business competition of the region, securing the top spot through strategic technical execution.</p>
-      </div>
-      <div class="accolade-card tilt reveal reveal-delay-1">
-        <div class="accolade-year">2025</div>
-        <div class="accolade-header">
-          <span class="accolade-rank">Runner-up</span>
+        <div class="accolade-card tilt reveal reveal-delay-1 accolade-slide">
+          <div class="accolade-year">2025</div>
+          <div class="accolade-header">
+            <span class="accolade-rank">Runner-up</span>
+          </div>
+          <h3 class="accolade-name">Shemrock Business Meet</h3>
+          <p class="accolade-loc">Shemrock School, Sector 69</p>
+          <p class="accolade-desc">Representing our consistent 3-member core team as the Technical Director, I was responsible for developing and implementing a robust digital framework during the Shemrock Business Meet. Our team navigated complex business simulations and strategic challenges, where my technical oversight enabled us to pivot quickly during time-sensitive tasks, resulting in a prestigious 2nd place finish among the top business minds in the sector.</p>
         </div>
-        <h3 class="accolade-name">Shemrock Business Meet</h3>
-        <p class="accolade-loc">Shemrock School, Sector 69</p>
-        <p class="accolade-desc">Served as the Tech In-charge for our consistent 3-member team, securing 2nd place in a highly competitive field of business strategists.</p>
       </div>
     </div>
   </div>
@@ -400,34 +423,95 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services">
-  <div class="max-w">
+<section id="services" class="services-pin-section">
+  <div class="max-w services-pin-content">
     <div class="section-label reveal">Hire Me</div>
     <h2 class="section-title reveal">Services<br/>I Offer</h2>
     <div class="services-list">
-      <div class="service-item reveal">
-        <span class="service-num">01</span>
-        <div class="service-content">
-          <div class="service-title">Web App Development</div>
-          <div class="service-sub">Full-stack builds · Landing pages · E-commerce · EdTech platforms · Custom APIs</div>
+      <div class="service-item reveal" data-service="0">
+        <div class="service-header">
+          <span class="service-num">01</span>
+          <div class="service-content">
+            <div class="service-title">Web App Development</div>
+            <div class="service-sub">Full-stack builds · Landing pages · E-commerce · EdTech platforms · Custom APIs</div>
+          </div>
+          <span class="service-icon">🌐</span>
         </div>
-        <span class="service-icon">🌐</span>
+        <div class="service-expanded">
+          <div class="service-expanded-inner">
+            <p class="service-detail-text">From concept to deployment — I build complete web applications that are fast, responsive, and production-ready. Whether it's a SaaS platform, an e-commerce storefront with payment integration, or a custom API backend, I handle the full stack.</p>
+            <div class="service-highlights">
+              <div class="service-highlight"><span class="highlight-num">100%</span><span class="highlight-label">Responsive Design</span></div>
+              <div class="service-highlight"><span class="highlight-num">Full</span><span class="highlight-label">Stack Capability</span></div>
+              <div class="service-highlight"><span class="highlight-num">Live</span><span class="highlight-label">Deployments</span></div>
+            </div>
+            <div class="service-detail-tags">
+              <span class="service-tag">Python</span>
+              <span class="service-tag">FastAPI</span>
+              <span class="service-tag">HTML / CSS / JS</span>
+              <span class="service-tag">Razorpay</span>
+              <span class="service-tag">REST APIs</span>
+              <span class="service-tag">Database Design</span>
+              <span class="service-tag">Deployment</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="service-item reveal reveal-delay-1">
-        <span class="service-num">02</span>
-        <div class="service-content">
-          <div class="service-title">Online Marketing & Advertisement</div>
-          <div class="service-sub">Campaign strategy · Digital ads · Brand building · Social growth · Content direction</div>
+      <div class="service-item reveal reveal-delay-1" data-service="1">
+        <div class="service-header">
+          <span class="service-num">02</span>
+          <div class="service-content">
+            <div class="service-title">Online Marketing & Advertisement</div>
+            <div class="service-sub">Campaign strategy · Digital ads · Brand building · Social growth · Content direction</div>
+          </div>
+          <span class="service-icon">📢</span>
         </div>
-        <span class="service-icon">📢</span>
+        <div class="service-expanded">
+          <div class="service-expanded-inner">
+            <p class="service-detail-text">I craft digital marketing strategies that don't just create noise — they create conversions. From building brand identity to running targeted ad campaigns, I combine commerce thinking with creative execution to drive real, measurable growth.</p>
+            <div class="service-highlights">
+              <div class="service-highlight"><span class="highlight-num">ROI</span><span class="highlight-label">Driven Strategy</span></div>
+              <div class="service-highlight"><span class="highlight-num">Multi</span><span class="highlight-label">Platform Reach</span></div>
+              <div class="service-highlight"><span class="highlight-num">Data</span><span class="highlight-label">Backed Decisions</span></div>
+            </div>
+            <div class="service-detail-tags">
+              <span class="service-tag">Meta Ads</span>
+              <span class="service-tag">Google Ads</span>
+              <span class="service-tag">Brand Strategy</span>
+              <span class="service-tag">Content Direction</span>
+              <span class="service-tag">Social Media</span>
+              <span class="service-tag">Analytics</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="service-item reveal reveal-delay-2">
-        <span class="service-num">03</span>
-        <div class="service-content">
-          <div class="service-title">Personal Fitness Coaching</div>
-          <div class="service-sub">Custom training plans · Nutrition guidance · Martial arts conditioning · Mindset coaching</div>
+      <div class="service-item reveal reveal-delay-2" data-service="2">
+        <div class="service-header">
+          <span class="service-num">03</span>
+          <div class="service-content">
+            <div class="service-title">Personal Fitness Coaching</div>
+            <div class="service-sub">Custom training plans · Nutrition guidance · Martial arts conditioning · Mindset coaching</div>
+          </div>
+          <span class="service-icon">💪</span>
         </div>
-        <span class="service-icon">💪</span>
+        <div class="service-expanded">
+          <div class="service-expanded-inner">
+            <p class="service-detail-text">Fitness isn't a hobby for me — it's a discipline. I offer personal coaching built on real experience in weight training, martial arts, structured nutrition, and the mental fortitude that ties it all together. Custom plans. Real accountability. Zero shortcuts.</p>
+            <div class="service-highlights">
+              <div class="service-highlight"><span class="highlight-num">1:1</span><span class="highlight-label">Personal Training</span></div>
+              <div class="service-highlight"><span class="highlight-num">Custom</span><span class="highlight-label">Diet Plans</span></div>
+              <div class="service-highlight"><span class="highlight-num">Zero</span><span class="highlight-label">Shortcuts</span></div>
+            </div>
+            <div class="service-detail-tags">
+              <span class="service-tag">Bodybuilding</span>
+              <span class="service-tag">Martial Arts</span>
+              <span class="service-tag">Nutrition Plans</span>
+              <span class="service-tag">Cardio Programming</span>
+              <span class="service-tag">Mindset</span>
+              <span class="service-tag">Accountability</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -445,6 +529,37 @@
     <div class="contact-socials reveal">
       <a href="https://www.instagram.com/the_commerce_engineer?igsh=MWxsNG92MnI2MDgydA==" target="_blank" class="social-link">Instagram ↗</a>
     </div>
+
+    <div class="contact-form-wrapper reveal">
+      <form id="contact-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="user_name">Name</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Raaghav Tony" required>
+          </div>
+          <div class="form-group">
+            <label for="user_email">Email</label>
+            <input type="email" id="user_email" name="user_email" placeholder="raaghav@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Feedback" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        
+        <button type="submit" id="form-submit" class="btn-primary">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader"></span>
+        </button>
+
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+
   </div>
 </section>
 
@@ -455,6 +570,9 @@
 </footer>
 </div>
 
+</div> <!-- END MAIN CONTENT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
