@@ -774,6 +774,7 @@ function initContactForm() {
       name: document.getElementById('user_name').value,
       email: document.getElementById('user_email').value,
       title: document.getElementById('subject').value,
+      phone: document.getElementById('user_phone').value || 'Not provided',
       message: document.getElementById('message').value
     };
 
